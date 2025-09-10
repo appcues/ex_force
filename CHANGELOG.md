@@ -1,6 +1,8 @@
 # Changelog
 
-## [Unreleased]
+## 0.5.0 - 2025-09-10
+
+Update deps, fix issues with Tesla. Add JWT support.
 
 ## 0.4.1 - 2021-10-02
 

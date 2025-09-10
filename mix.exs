@@ -1,13 +1,13 @@
 defmodule ExForce.Mixfile do
   use Mix.Project
 
-  @version "0.4.1"
+  @version "0.5.0"
 
   def project do
     [
       app: :ex_force,
       version: @version,
-      elixir: "~> 1.8",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
@@ -17,8 +17,8 @@ defmodule ExForce.Mixfile do
 
       # ex_doc
       name: "ExForce",
-      source_url: "https://github.com/chulkilee/ex_force",
-      homepage_url: "https://github.com/chulkilee/ex_force",
+      source_url: "https://github.com/appcues/ex_force",
+      homepage_url: "https://github.com/appcues/ex_force",
       docs: [main: "ExForce"],
 
       # test
@@ -48,10 +48,10 @@ defmodule ExForce.Mixfile do
     [
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/chulkilee/ex_force",
-        "Changelog" => "https://github.com/chulkilee/ex_force/blob/main/CHANGELOG.md"
+        "GitHub" => "https://github.com/appcues/ex_force",
+        "Changelog" => "https://github.com/appcues/ex_force/blob/main/CHANGELOG.md"
       },
-      maintainers: ["Chulki Lee"]
+      maintainers: ["Andy LeClair"]
     ]
   end
 end
