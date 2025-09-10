@@ -126,7 +126,6 @@ defmodule ExForce.OAuth do
       url: "/services/oauth2/token",
       body: build_payload(grant_type, opts)
     })
-    |> dbg()
     |> verify_signature(grant_type, opts)
   end
 
