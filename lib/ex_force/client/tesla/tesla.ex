@@ -18,7 +18,7 @@ defmodule ExForce.Client.Tesla do
     Response
   }
 
-  @default_api_version "42.0"
+  @default_api_version "64.0"
   @default_user_agent "ex_force"
 
   @doc """
@@ -68,7 +68,6 @@ defmodule ExForce.Client.Tesla do
     Tesla.client(
       [
         {Tesla.Middleware.BaseUrl, instance_url},
-        {Tesla.Middleware.Compression, format: "gzip"},
         Tesla.Middleware.FormUrlencoded,
         {Tesla.Middleware.DecodeJson, engine: Jason},
         {Tesla.Middleware.Headers, get_headers(opts)}
